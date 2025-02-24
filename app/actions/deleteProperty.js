@@ -14,7 +14,7 @@ async function deleteProperty(propertyId) {
 
   const { userId } = sessionUser;
 
-  const property = await Property.findById(propertyID);
+  const property = await Property.findById(propertyId);
 
   if (!property) throw new Error("Property Not Found");
 
